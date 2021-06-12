@@ -1,15 +1,312 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('_head.html',{
-"title":"Главная"
+"title":"Путевод"
 })
 
 <body>
     <div class="wrapper">
         @@include('_header.html',{})
         <main class="page">
-            <section class="about">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero sit vero ratione nemo, eaque fuga rem magnam, non autem tenetur? Nihil, alias. Eligendi maiores assumenda consequatur, autem porro ratione deleniti rerum quis fugiat animi ducimus delectus accusamus quia velit quisquam ut, sapiente molestiae eius eveniet voluptatum. Dolores dignissimos vel voluptatibus officiis blanditiis, dolorum hic, at deleniti quis quas mollitia dolor et rem eum autem sequi odit perferendis. Nesciunt, atque illum? Impedit itaque corrupti illum quisquam fugit, esse atque magnam tempora iusto, rem libero qui tempore ipsam minima quod. Corrupti repudiandae quis quasi perspiciatis rerum sit quas, commodi explicabo doloribus ipsa deserunt numquam asperiores omnis, sapiente amet, fugit nemo delectus velit animi vero dolores? Mollitia impedit tempora eum dolor saepe quisquam. Asperiores eum debitis tempore porro iure incidunt numquam. Soluta dolore ullam modi, incidunt atque at, tenetur nesciunt rerum, perspiciatis excepturi vero aperiam dolorem facilis ea molestiae quaerat autem impedit? Expedita quos nam, aliquid officiis dolorum labore? Corporis a commodi, accusamus eveniet perspiciatis iure, sint nulla autem laboriosam, itaque sit facilis quas. Non aliquam minus dolorum nulla. Tempora labore voluptas tenetur reprehenderit obcaecati non ratione, aut placeat quam sapiente, quidem architecto perferendis voluptate porro, sunt sequi corporis exercitationem officia fuga temporibus nam? Recusandae sint dicta officia doloremque perferendis, rem enim impedit non ab nulla fugiat laboriosam illo reiciendis quidem. Ex dignissimos at quas laborum aut, ipsum optio quis autem modi eligendi aliquam molestiae odit provident ducimus maxime cum eum quam! Temporibus, officia fuga aperiam corporis facere optio! Itaque odit sed, error earum placeat laborum repudiandae. Veniam delectus doloremque sit id tempore incidunt eligendi animi ut. Impedit explicabo aspernatur est nobis eum inventore accusantium error. Dolor quaerat facere, deserunt, odit illo cumque voluptatem consequatur? Voluptatem neque voluptas quas numquam necessitatibus provident nostrum in vero mollitia totam? Fugit magnam illum, et. Nisi soluta et voluptatum fugit voluptatibus. Unde earum odit reprehenderit incidunt, illo ab consequuntur iusto dolorum dolore praesentium voluptates delectus amet atque dicta dignissimos nulla aperiam? Vitae necessitatibus quasi quidem deserunt, perspiciatis quas natus suscipit excepturi vero officia, id delectus, earum voluptate et asperiores ratione eos voluptates cupiditate quam harum porro voluptatum omnis dignissimos! Impedit aut quibusdam iste iure harum modi voluptates nemo reprehenderit, eum saepe repellat vitae sit nostrum at alias ipsum sed distinctio? Cupiditate quod rerum ullam in, fuga quisquam magni quaerat nam. Inventore, maiores dolore ad provident quis reiciendis magnam non totam iure quaerat nesciunt praesentium nemo velit odit laborum consequatur distinctio a! Debitis necessitatibus sit illo doloremque, commodi, animi sunt vel ratione cumque in ex ducimus. Facilis, in quis explicabo sequi officiis alias omnis modi mollitia obcaecati asperiores itaque repudiandae iure repellat suscipit ut rem architecto dignissimos porro magni voluptas natus totam, sint eum blanditiis. Iusto in consequuntur accusantium culpa porro, molestiae sequi, nam sapiente molestias labore atque nihil ad et voluptate mollitia, necessitatibus delectus voluptatem neque assumenda alias saepe maxime quidem? Ad, doloribus distinctio ex pariatur maiores natus vel in, laborum velit veniam quia molestiae. Laudantium, perspiciatis molestias quaerat cum, modi eius nesciunt reiciendis sapiente explicabo rem.
+            <section class="info" id="info">
+                <div class="_container">
+                    <div class="header-block">
+                        <h2 class="info__title header-block__title">Общая Информация</h2>
+                    </div>
+                    <div class="info__content">
+                        <div class="info__text">
+                            <p class="info__paragraph">Каждый хотя бы однажды должен полетать в корзине воздушного шара. Это необыкновенные ощущения и совершенно особенное удовольствие. Воздушные шары пронесли сквозь два века романтику воздухоплавания, ведь именно так человек впервые поднялся в небо. Недаром полеты на большом воздушном шаре во всем мире считаются одним из наиболее впечатляющих видов активного отдыха.
+                            </p>
+                            <p class="info__paragraph">Во все времена люди засматривались в небо и завидовали парящим в нем птицам. Эти извечные человеческие мечты породили немало мифов и легенд, но воплотились в жизнь сравнительно недавно. Изобретение воздушного шара подарило людям возможность ощутить прелесть свободного полета и почувствовать себя сродни птицам.</p>
+                        </div>
+                        <div class="info__video video">
+                            <div class="youtube" id="myTtc3tcLQ4"></div>
+                        </div>
+                    </div>
+                    <a href="#order" class="info__btn btn _popup-link">Заказать полет</a>
+                </div>
+            </section>
+            <section class="advantages" id="advantages" style="background-image: url('img/advantages-bg.jpg');">
+                <div class="_container">
+                    <div class="header-block">
+                        <h2 class="advantages__title header-block__title">Преимущества</h2>
+                    </div>
+                    <div class="advantages__items">
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="img/icon-1.svg" alt="">
+                                </div>
+                                <div class="advantages__heading">Опытные инструкторы</div>
+                                <p class="advantages__descr">Наши инструкторы имеют высокую квалификацию</p>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item advantages__item_accent">
+                                <div class="advantages__icon">
+                                    <img src="img/icon-2.svg" alt="">
+                                </div>
+                                <div class="advantages__heading advantages__heading_big">700</div>
+                                <p class="advantages__descr">На нашем счету более
+                                    семиста полетов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="img/icon-3.svg" alt="">
+                                </div>
+                                <div class="advantages__heading">Поощрение</div>
+                                <p class="advantages__descr">После полета мы выдадим
+                                    Вам сертификат</p>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="img/icon-4.svg" alt="">
+                                </div>
+                                <div class="advantages__heading">Безопасность</div>
+                                <p class="advantages__descr">В целях безопасности оплата производиться по прибытию</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="stages" class="stages">
+                <div class="stages__wrapper _container">
+                    <div class="header-block">
+                        <h2 class="stages__title header-block__title">Этапы мероприятия</h2>
+                    </div>
+                    <div class="stages__desk desk">
+                        <div class="desk__header">От заказа до полета</div>
+                        <div class="desk__body timeline">
+                            <div class="timeline__item">
+                                Вы выбираете подходящий для Вас вариант полета и оформляете заявку
+                            </div>
+                            <div class="timeline__item">В течении 15 минут мы перезвоним Вам
+                                и уточним некоторые детали</div>
+                            <div class="timeline__item">После чего Вам по смс и на почту
+                                придет личный код</div>
+                            <div class="timeline__item">Полет Вы оплачиваете по прибытию
+                                в целях безопасности</div>
+                            <div class="timeline__item">Мы проводим инструктаж и отправляемся
+                                за новыми ощущениями</div>
+                        </div>
+                        <div class="desk__footer">
+                            <a href="#order" class="desk__btn btn _popup-link">Заказать полет</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="order-flight" id="order-flight">
+                <div class="_container">
+                    <div class="header-block">
+                        <h2 class="order-flight__title header-block__title">заказать полет</h2>
+                        <div class="header-block__subtitle header-block__subtitle_grey">Выберите подходящий для Вас вариант</div>
+                    </div>
+                    <div class="order-flight__cards">
+                        <div class="order-flight__column">
+                            <div class="order-flight__card flight-card">
+                                <div class="flight-card__picture">
+                                    <img src="img/order-card4.jpg" alt="">
+                                </div>
+                                <div class="flight-card__body">
+                                    <h3 class="flight-card__title">Семейный полет
+                                        <span>3-4 человека</span></h3>
+                                </div>
+                                <div class="flight-card__footer">
+                                    <div class="flight-card__time _icon-clock">1-2 часа</div>
+                                    <div class="flight-card__price">25 000 руб</div>
+                                    <a href="#order" class="flight-card__btn btn _popup-link" data-val="1">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-flight__column">
+                            <div class="order-flight__card flight-card">
+                                <div class="flight-card__picture">
+                                    <img src="img/order-card2.jpg" alt="">
+                                </div>
+                                <div class="flight-card__body">
+                                    <h3 class="flight-card__title">Романтический полет
+                                        <span>для двоих</span></h3>
+                                </div>
+                                <div class="flight-card__footer">
+                                    <div class="flight-card__time _icon-clock">1 час</div>
+                                    <div class="flight-card__price">30 000 руб</div>
+                                    <a href="#order" class="flight-card__btn btn _popup-link" data-val="2">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-flight__column">
+                            <div class="order-flight__card flight-card">
+                                <span class="flight-card__discont">-25%</span>
+                                <div class="flight-card__picture">
+                                    <img src="img/order-card3.jpg" alt="">
+                                </div>
+                                <div class="flight-card__body">
+                                    <h3 class="flight-card__title">групповой полет
+                                        <span>>2 шаров</span></h3>
+                                </div>
+                                <div class="flight-card__footer">
+                                    <div class="flight-card__time _icon-clock">1-2 часа</div>
+                                    <div class="flight-card__price">20 000 руб</div>
+                                    <a href="#order" class="flight-card__btn btn _popup-link" data-val="3">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-flight__column">
+                            <div class="order-flight__card flight-card">
+                                <div class="flight-card__picture">
+                                    <img src="img/order-card1.jpg" alt="">
+                                </div>
+                                <div class="flight-card__body">
+                                    <h3 class="flight-card__title">Полет для 1-3 VIP
+                                        <span>все включено</span></h3>
+                                </div>
+                                <div class="flight-card__footer">
+                                    <div class="flight-card__time _icon-clock">1-2 часа</div>
+                                    <div class="flight-card__price">50 000 руб</div>
+                                    <a href="#order" data-val="4" class="flight-card__btn btn _popup-link">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery" id="gallery">
+                <div class="_container">
+                    <div class="header-block">
+                        <h2 class="gallery__title header-block__title">Галерея</h2>
+                        <div class="header-block__subtitle">Завораживающие моменты наших клиентов</div>
+                    </div>
+                </div>
+                <div class="mainslider">
+                    <div class="_container">
+                        <div class="mainslider__body _swiper">
+                            <a href="img/head-bg.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/head-bg.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide1.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide1.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide2.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide2.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide3.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide3.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide4.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide4.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide5.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide5.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide6.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide6.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide1.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide1.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide2.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide2.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide3.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide3.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide4.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide4.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide5.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide5.jpg" alt="Галерея">
+                            </a>
+                            <a href="img/gallery-slider/slide6.jpg" class="mainslider__slide _icon-search">
+                                <img src="img/gallery-slider/slide6.jpg" alt="Галерея">
+                            </a>
+                        </div>
+                        <div class="mainslider__dotts"></div>
+                    </div>
+                </div>
+                <div class="_container">
+                    <a href="#order" class="gallery__btn btn _popup-link">Заказать полет</a>
+                </div>
+            </section>
+            <section class="feedbacks" id="feedbacks">
+                <div class="_container">
+                    <div class="header-block">
+                        <h2 class="feedbacks__title header-block__title">Что думают о нас клиенты?</h2>
+                    </div>
+                </div>
+                <div class="feedbacks__slider-wrapper">
+                    <div class="feedbacks__slider slider-feedbacks _swiper">
+                        <div class="slider-feedbacks__slide">
+                            <div class="slider-feedbacks__avatar">
+                                <img src="img/avatars/1.png" alt="">
+                            </div>
+                            <div class="slider-feedbacks__content">
+                                <a href="" class="slider-feedbacks__link _icon-vk"></a>
+                                <div class="slider-feedbacks__name">Алексей</div>
+                                <div class="slider-feedbacks__descr">Рад, что обратился именно к вам. Очень мне понравилась ваша организованность и обслуживание. Иснтрукторы у вас очень грамотные. Не забуду эти ощущения!</div>
+                            </div>
+                        </div>
+                        <div class="slider-feedbacks__slide">
+                            <div class="slider-feedbacks__avatar">
+                                <img src="img/avatars/2.png" alt="">
+                            </div>
+                            <div class="slider-feedbacks__content">
+                                <a href="" class="slider-feedbacks__link _icon-insta"></a>
+                                <div class="slider-feedbacks__name">Алина</div>
+                                <div class="slider-feedbacks__descr">Море положительных эмоций! Полет прекрасен! Столько сделала хороших кадров!
+                                    Буду всем советовать только вас, потому что вы действительно знаете свое дело!</div>
+                            </div>
+                        </div>
+                        <div class="slider-feedbacks__slide">
+                            <div class="slider-feedbacks__avatar">
+                                <img src="img/avatars/3.png" alt="">
+                            </div>
+                            <div class="slider-feedbacks__content">
+                                <a href="" class="slider-feedbacks__link _icon-fb"></a>
+                                <div class="slider-feedbacks__name">Степан</div>
+                                <div class="slider-feedbacks__descr">Летали всей семьей, всем очень понравилось. Сбылась наша мечта. Все довольны.
+                                    Отдельная благодарность за скидку ; ) Ребята молодцы!</div>
+                            </div>
+                        </div>
+                        <div class="slider-feedbacks__slide">
+                            <div class="slider-feedbacks__avatar">
+                                <img src="img/avatars/1.png" alt="">
+                            </div>
+                            <div class="slider-feedbacks__content">
+                                <a href="" class="slider-feedbacks__link _icon-vk"></a>
+                                <div class="slider-feedbacks__name">Алексей</div>
+                                <div class="slider-feedbacks__descr">Рад, что обратился именно к вам. Очень мне понравилась ваша организованность и обслуживание. Иснтрукторы у вас очень грамотные. Не забуду эти ощущения!</div>
+                            </div>
+                        </div>
+                        <div class="slider-feedbacks__slide">
+                            <div class="slider-feedbacks__avatar">
+                                <img src="img/avatars/2.png" alt="">
+                            </div>
+                            <div class="slider-feedbacks__content">
+                                <a href="" class="slider-feedbacks__link _icon-insta"></a>
+                                <div class="slider-feedbacks__name">Алина</div>
+                                <div class="slider-feedbacks__descr">Море положительных эмоций! Полет прекрасен! Столько сделала хороших кадров!
+                                    Буду всем советовать только вас, потому что вы действительно знаете свое дело!</div>
+                            </div>
+                        </div>
+                        <div class="slider-feedbacks__slide">
+                            <div class="slider-feedbacks__avatar">
+                                <img src="img/avatars/3.png" alt="">
+                            </div>
+                            <div class="slider-feedbacks__content">
+                                <a href="" class="slider-feedbacks__link _icon-fb"></a>
+                                <div class="slider-feedbacks__name">Степан</div>
+                                <div class="slider-feedbacks__descr">Летали всей семьей, всем очень понравилось. Сбылась наша мечта. Все довольны.
+                                    Отдельная благодарность за скидку ; ) Ребята молодцы!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedbacks__dotts"></div>
+                </div>
             </section>
         </main>
         @@include('_footer.html',{})

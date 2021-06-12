@@ -66,6 +66,38 @@
     }
 }
 
+@mixin adaptiv-value2($property, $startSize, $minSize, $minWidth, $type) {
+    $addSize: $startSize - $minSize;
+
+    // for content in container
+    @if $type==1 {
+        //Только если меньше контейнера
+        #{$property}: $startSize + px;
+
+        @media (max-width: #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidthContainer - $minWidth}));
+        }
+    }
+
+
+    // for sections paddings or section decor images
+    @else {
+
+        @media (min-width: #{$maxWidth + px}) {
+
+            #{$property}: $startSize + px;
+
+        }
+
+        @media screen and (min-width: #{$minWidth + px}) and (max-width: #{$maxWidth + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidth - $minWidth}));
+        }
+
+
+    }
+}
+
+
 @mixin from-to($min_width, $max_width) {
     @media screen and (min-width: $min_width) and (max-width: $max_width) {
         @content;

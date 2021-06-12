@@ -54,26 +54,38 @@
 }
 
 
-.header {
-    flex: 1 1 auto;
+.main-block {
+    //flex: 1 1 auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
 
-    /* .header__content */
+    /*@media (max-width: 500px) {
+    background-position: right center;
+}*/
+
+    /* .main-block__content */
     &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        min-height: calc(var(--vh, 1vh) * 100);
+        gap: 20px;
+        @include adaptiv-value2('padding-bottom', 100, 35, 320, 0);
+
         @media (max-width: $md3+px) {
-            display: flex;
-            flex-direction: column;
+
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            padding-top: 90px;
+
         }
     }
 
-    /* .header__top-line */
-    &__top-line {
+    /* .main-block__header */
+    &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -86,23 +98,21 @@
             left: 0;
             width: 100%;
             padding: 0 21px;
+            z-index: 50;
         }
     }
 
-    /* .header__middle-line */
+    /* .main-block__middle-line */
     &__middle-line {
         text-align: center;
 
-        @media (min-width: $md3+px) {
-            padding: 120 / $maxWidthContainer * 100% 0px 0px 0px;
+        @media (max-width: $md3+px) {
+            margin-top: auto;
         }
 
-        @media (min-width: $md3+px) {
-            padding: 95px 0px 0px 0px;
-        }
     }
 
-    /* .header__logo */
+    /* .main-block__logo */
     &__logo {
         display: inline-block;
         width: 93px;
@@ -113,12 +123,12 @@
         }
     }
 
-    /* .header__menu */
+    /* .main-block__menu */
     &__menu {
         margin: 0px 0px 0px 40 / $maxWidthContainer * 100%;
     }
 
-    /* .header__menu-body */
+    /* .main-block__menu-body */
     &__menu-body {
         @media (max-width: $md3+px) {
             position: fixed;
@@ -149,10 +159,10 @@
         }
     }
 
-    /* .header__phones */
+    /* .main-block__phones */
     &__phones {}
 
-    /* .header__title */
+    /* .main-block__title */
     &__title {
 
         font-size: 40px;
@@ -180,12 +190,12 @@
 
     }
 
-    /* .header__btn */
+    /* .main-block__btn */
     &__btn {
-        margin: 93px 0px 0px 0px;
+        align-self: center;
 
-        @media (max-width: $md4+px) {
-            margin: 45px 0px 0px 0px;
+        @media (max-width: $md3+px) {
+            margin-top: auto;
         }
     }
 }
@@ -241,7 +251,7 @@
             transition: all .3s ease;
         }
 
-        @media (min-width:$md1+px) {
+        @media (min-width:$md2+px) {
 
             &:hover {
                 color: lighten(#000, 7%);
@@ -254,15 +264,53 @@
         }
 
         @media (max-width:$md3+px) {
-            font-size: 18px;
-            padding: 4px;
+            font-size: 20px;
+            padding: 11px;
+        }
+    }
+
+    &_footer {
+        margin: 0px 0px 37px 0px;
+
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+
+        .body-menu__list {
+            justify-content: center;
+        }
+
+        .body-menu__link {
+            color: #fff;
+
+            @media (min-width: $md2+px) {
+                &:after {
+                    height: 2px;
+                }
+
+                &:hover {
+                    color: darken(#fff, 10%);
+
+                    &:after {
+                        background-color: darken(#f6504f, 10%);
+                    }
+                }
+            }
         }
     }
 }
 
 .phones {
     @media (max-width: $md2+px) {
-        display: none;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px 0px 30px 0px;
+    }
+
+    @media (max-width:$md3+px) {
+        margin: 0px 0px 50px 0px;
     }
 
     /*@include from-to($md3+'px', $md2+'px') {
@@ -287,9 +335,10 @@
             bottom: 0;
             background-color: #f6504f;
             transition: all .3s ease;
+
         }
 
-        @media (min-width:$md1+px) {
+        @media (min-width:$md2+px) {
 
             &:hover {
                 color: lighten(#000, 7%);
@@ -299,6 +348,16 @@
                     left: 0;
                 }
             }
+        }
+
+
+
+        @media (max-width:$md2+px) {
+            &:first-child {
+                margin: 0px 15px 0px 0px;
+            }
+
+            color: #fff;
         }
     }
 

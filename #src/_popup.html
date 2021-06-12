@@ -1,22 +1,38 @@
-<div class="popup">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close"></div>
-		</div>
-	</div>
+<div class="popup popup_order">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <form data-ajax="true" data-message="success" method="POST" action="sendmail.php" class="popup__form form">
+                <div class="form__line">
+                    <label for="name" class="form__label">Имя</label>
+                    <input id="name" type="text" autocomplete="off" name="name" data-error="Вы не ввели имя" data-value="Введите имя" class="input _req">
+                </div>
+                <div class="form__line">
+                    <label for="phone" class="form__label">Телефон</label>
+                    <input id="phone" type="text" autocomplete="off" name="phone" data-error="Вы не ввели телефон" data-value="Введите телефон" class="input _req _phone">
+                </div>
+                <div class="form__line">
+                    <label for="select" class="form__label">Вариант полета</label>
+                    <select id="select" name="select" class="form">
+                        <option value="" disabled selected>Выберите вариант полета</option>
+                        <option value="1">Семейный полет</option>
+                        <option value="2">Романтический полет
+                            для двоих</option>
+                        <option value="3">Групповой полет</option>
+                        <option value="4">Полет для 1-3 VIP</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn form__btn btn_form">Отправить</button>
+            </form>
+        </div>
+    </div>
 </div>
-<div class="popup_massagename-message">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close"></div>
-		</div>
-	</div>
-</div>
-<div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
+<div class="popup popup_success-message">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+            <p>Запрос отправлен!<br>
+                Менеджер свяжется с вами в течение 30 минут!</p>
+        </div>
+    </div>
 </div>
